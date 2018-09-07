@@ -6,9 +6,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
 /*
-* java -cp target/HW_1.jar;C:\Users\Vlasova_R\.m2\repository\com\google\guava\guava\26.0-jre\guava-26.0-jre.jar ru.otus.hw_1.Main
-* */
+ * java -cp target/HW_1.jar;C:\Users\Vlasova_R\.m2\repository\com\google\guava\guava\26.0-jre\guava-26.0-jre.jar ru.otus.hw_1.Main
+ * */
 public class Main {
     private static final int MEASURE_COUNT = 1;
 
@@ -21,8 +22,8 @@ public class Main {
         }
 
         List<Integer> result1 = new ArrayList<>();
-        Collections.shuffle((List<Integer>)example);
-        calcTime(() -> result1.addAll(Lists.reverse((List<Integer>)example)));
+        Collections.shuffle((List<Integer>) example);
+        calcTime(() -> result1.addAll(Lists.reverse((List<Integer>) example)));
     }
 
     private static void calcTime(Runnable runnable) {
